@@ -1,14 +1,78 @@
 
 body {
-  background-color: #F5F5F5;
-  font-family: 'Roboto';
-  font-size: 22px;
+  background-color: #fbfcfc;
+  font-family: monospace;
+  position:fixed;
+  left:0em;
+  width:80%;
+  font-size: 1.5em;
+  padding:10%;
+  margin:0px;
+}
+/* HEADER ANIMATIONS */
+header{
+  position:fixed;
+  display:block;
+  /* width:100%; */
+  /* justify-content: left; */
+}
+div.typewriter  {
+  position: relative;
+  /* width:21em; */
+  float: left;
+  left:0em;
+}
+
+.typewriter h1{
+  overflow:hidden;
+  font-family: monospace;
+  /* justify-content: left; */
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 0 auto 0 0;
+  padding:1px;
+}
+
+#first{
+animation:
+typing 1.5s steps(21,end),
+blink-caret 0.5s step-end 3;
+}
+#second{
+  visibility:hidden;
+animation:
+typing 1.5s steps(21,end) 2s,
+blink-caret 0.5s step-end 2s infinite,
+appear 1s steps(1,start) 2s infinite;
+}
+
+@keyframes appear{
+  from{visibility: hidden;}
+  to{visibility: visible;}
+}
+@keyframes typing{
+  from{width:0em}
+  to{width:100%}
+}
+@keyframes blink-caret{
+  from, to {border-color: transparent;}
+  50% {border-color: black;}
+}
+
+/* section  */
+div.container  {
+  position: relative;
+    left:0;
+    width:100%;
+
+
+  /* float: left; */
 
 }
 
-div.top{
-margin:25px;background-color:white;padding:15px;border-radius:15px;
-transform: translateZ(-10000);
-box-shadow:2px 2px 2px 2px rgba(0,0,0,0.2);
+section.hello {
+  position:relative;
+    border: 1px solid black;
+  top:6em;
 
 }
