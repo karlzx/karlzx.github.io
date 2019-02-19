@@ -71,8 +71,10 @@ div.container  {
 }
 
 section.hello p{
+  position:static;
   padding-left:10px;
 }
+
 section.hello {
   position:relative;
     border: 1px solid black;
