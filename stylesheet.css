@@ -51,7 +51,7 @@ appear 1s steps(1,start) 2s infinite;
   to{visibility: visible;}
 }
 @keyframes typing{
-  from{width:0em}
+  from{width:1em}
   to{width:100%}
 }
 @keyframes blink-caret{
