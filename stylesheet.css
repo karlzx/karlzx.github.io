@@ -5,7 +5,7 @@ body {
   left:0em;
   width:80%;
   font-size: 1.5em;
-  padding:10%;
+  padding:5%;
   margin:0px;
 }
 /* HEADER ANIMATIONS */
@@ -80,6 +80,7 @@ div.window_head{
   display: block;
   color:white;
   padding-right: 10px;
+  padding-left: 10px;
   position: relative;
 }
 
@@ -97,4 +98,8 @@ section.hello {
 div.inside_hello{
    left: 10%;
    padding: 0px 10px;
+}
+
+p.ans {
+  padding-left: 10px;
 }
