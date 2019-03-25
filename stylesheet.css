@@ -1,7 +1,6 @@
 
 body {
   background-color: #fbfcfc;
-  font-family: monospace;
   position:fixed;
   left:0em;
   width:80%;
@@ -13,6 +12,7 @@ body {
 header{
   position:fixed;
   display:block;
+  font-family: monospace;
   /* width:100%; */
   /* justify-content: left; */
 }
@@ -74,9 +74,27 @@ div.container  {
   position:static;
 } */
 
+div.window_head{
+  background-color: #1e03b5;
+  width = inherit:
+  display: block;
+  color:white;
+  padding-right: 10px;
+  position: relative;
+}
+
 section.hello {
   position:relative;
-    border: 1px solid black;
+    border: 2px solid #1e03b5;
+    margin: 0px;
+    padding: 0px;
   top:6em;
+  font-family: monospace;
 
+
+}
+
+div.inside_hello{
+   left: 10%;
+   padding: 0px 10px;
 }
