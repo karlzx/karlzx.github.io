@@ -10,7 +10,7 @@ body {
   margin:0px;
 }
 /* HEADER ANIMATIONS */
-header{
+header.typewriter{
   position:fixed;
   display:block;
   font-family: monospace;
