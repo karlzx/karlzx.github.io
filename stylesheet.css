@@ -1,14 +1,5 @@
 
-body {
-  background-color: #fbfcfc;
-  position:fixed;
-  left:0em;
-  width:80%;
-  font-size: 1.5em;
-  padding-top:40px;
-  padding-left:10%;
-  margin:0px;
-}
+
 /* HEADER ANIMATIONS */
 header.typewriter{
   position:fixed;
@@ -17,6 +8,7 @@ header.typewriter{
   /* width:100%; */
   /* justify-content: left; */
 }
+
 div.typewriter  {
   position: relative;
   /* width:21em; */
@@ -35,16 +27,16 @@ div.typewriter  {
 }
 
 #first{
-animation:
-typing 1.5s steps(21,end),
-blink-caret 0.5s step-end 3;
+  animation:
+  typing 1.5s steps(21,end),
+  blink-caret 0.5s step-end 3;
 }
 #second{
   visibility:hidden;
-animation:
-typing 1.5s steps(21,end) 2s,
-blink-caret 0.5s step-end 2s infinite,
-appear 1s steps(1,start) 2s infinite;
+  animation:
+  typing 1.5s steps(21,end) 2s,
+  blink-caret 0.5s step-end 2s infinite,
+  appear 1s steps(1,start) 2s infinite;
 }
 
 @keyframes appear{
@@ -60,20 +52,26 @@ appear 1s steps(1,start) 2s infinite;
   50% {border-color: black;}
 }
 
+/* WEBPAGE STYLES */
+body {
+  background-color: #fbfcfc;
+  position:fixed;
+  left:0em;
+  width:80%;
+  font-size: 1.5em;
+  padding-top:80px;
+  padding-left:10%;
+  margin:0px;
+  overflow: scroll;
+}
+
+
 /* section  */
 div.container  {
   position: relative;
-    left:0;
-    width:100%;
-
-
-  /* float: left; */
-
+  left:0;
+  width:100%;
 }
-
-/* section.hello p{
-  position:static;
-} */
 
 div.window_head{
   background-color: #1e03b5;
@@ -85,11 +83,20 @@ div.window_head{
   position: relative;
 }
 
+div.window_side{
+  background-color: #d6d4d3;
+  width: 30px;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+
 section.hello {
   position:relative;
-    border: 2px solid #1e03b5;
-    margin: 0px;
-    padding: 0px;
+  border: 2px solid #021dc7;
+  margin: 0px;
+  padding: 0px;
   top:6em;
   font-family: monospace;
 
@@ -97,10 +104,11 @@ section.hello {
 }
 
 div.inside_hello{
-   left: 10%;
-   padding: 0px 10px;
+  left: 10%;
+  padding: 0px 40px;
+
 }
 
 p.ans {
-  padding-left: 10px;
+  padding-left: 20px;
 }
