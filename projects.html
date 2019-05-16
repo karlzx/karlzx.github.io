@@ -6,6 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> Projects </title>
 <link rel="icon" type="image/ico" href="Images/Broom.png" />
+
+
+<style>
+
+</style>
 </head>
 <body>
   <!-- <body style="background-color:powderblue;"> -->
@@ -20,6 +25,22 @@
 <p>But in the mean time, if you'd like to know more about me, check out my
   <a href="https://www.linkedin.com/in/karlsomoray/">LinkedIn profile!</a>
 </p>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+<img src="wrongname.gif" alt="Flowers in Chania">
 
 <hr>
 <p> <a href="./index.html">Home</a>
